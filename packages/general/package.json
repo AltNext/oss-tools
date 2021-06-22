@@ -1,0 +1,20 @@
+{
+  "name": "PACKAGE_NAME",
+  "version": "0.0.0",
+  "description": "PACKAGE_DESCRIPTION",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "files": [
+    "src/**/*.js",
+    "index.js",
+    "**/*.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/altnext/PACKAGE_REPO.git"
+  },
+  "scripts": {},
+  "devDependencies": {},
+  "author": "Altnext Gorillaz",
+  "license": "MIT"
+}
