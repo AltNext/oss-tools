@@ -32,6 +32,10 @@ Generic JavaScript publishing workflow.
 
 See this repository's `.changeset` directory for instructions on how to add `changesets` to your repository.
 
+## GitHub templates
+We provide two generic issue templates and one generic pull request template.
+To use them, simply place the `ISSUE_TEMPLATE` directory and `PULL_REQUEST_TEMPLATE.md` file in this repository inside your repository's `.github` directory.
+
 ## GitHub applications
 
 ### Do Not Merge GCF
