@@ -10,3 +10,6 @@ and a `prerelease` script that runs `yarn build` if needed.
 
 To automatically open PRs that generate changelogs and publish packages,
 see the `release.yml` file in the `.github` directory in this repository.
+
+To get comments on PRs, notifying you of the changesets in them or lack thereof,
+add permissions to `changeset-bot` to access your repository.

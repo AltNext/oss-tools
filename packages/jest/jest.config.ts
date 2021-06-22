@@ -1,23 +1,23 @@
-import type { Config } from "@jest/types";
+import type { Config } from '@jest/types';
 
 const config: Config.InitialOptions = {
-  preset: "ts-jest",
-  testEnvironment: "node",
+  preset: 'ts-jest',
+  testEnvironment: 'node',
   collectCoverage: true,
-  collectCoverageFrom: ["src/**/*.{ts,tsx}"],
-  coverageReporters: ["lcov", "text", "text-summary"],
+  collectCoverageFrom: ['src/**/*.{ts,tsx}'],
+  coverageReporters: ['lcov', 'text', 'text-summary'],
   reporters: [
-    "default",
+    'default',
     [
-      "jest-junit",
+      'jest-junit',
       {
-        suiteName: "iql tests",
-        outputDirectory: "./reports",
-        outputName: "iql.xml",
+        suiteName: 'iql tests',
+        outputDirectory: './reports',
+        outputName: 'iql.xml',
       },
     ],
   ],
-  testPathIgnorePatterns: ["node_modules", "dist"],
+  testPathIgnorePatterns: ['node_modules', 'dist'],
 };
 
 export default config;

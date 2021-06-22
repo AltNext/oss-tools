@@ -4,9 +4,10 @@ This directory contains 3 workflows and 1 configuration file,
 all to be placed inside the `.github` directory of the repo.
 
 ## `generated-files-bot.yml`
-### We use Google's Generated Files Bot to track changes to generated files, or files relating to our CI process.
+### We use Generated Files Bot to track changes to generated files, or files relating to our CI process.
 
-Add permissions for Google's Generated Files Bot to access the repository.
+Add permissions for Generated Files Bot to access the repository.
+
 Add to this file any files that should not be changed by outside collaborators,
 or files that should not be manually changed.
 
@@ -26,3 +27,10 @@ Modify `jobs.analyze.strategy.matrix.language` to analyze languages other than {
 Generic JavaScript publishing workflow.
 
 See this repository's `.changeset` directory for instructions on how to add `changesets` to your repository.
+
+## GitHub applications
+
+### Do Not Merge GCF
+We use this bot to block PRs with the label `do not merge` (or `do-not-merge`) from being merged.
+
+Add permissions for this bot to access your repository to enable it.
