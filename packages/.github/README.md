@@ -17,11 +17,15 @@ or files that should not be manually changed.
 Generic JavaScript testing workflow.
 Modify `jobs.test.strategy.matrix.node-version` to test against different NodeJS versions.
 
+Add the test run and coverage statuses to your protected branch's required status checks.
+
 See this repository's `jest` directory for instructions on how to add `jest` to your project to test it.
 
 ### `codeql-analysis.yml`
 Generic CodeQL analysis workflow.
 Modify `jobs.analyze.strategy.matrix.language` to analyze languages other than {Java,Type}Script.
+
+Add the analysis statuses to your protected branch's required status checks.
 
 ### `release.yml`
 Generic JavaScript publishing workflow.
