@@ -1,4 +1,24 @@
-# NPM
+## GitHub
+
+### Settings
+
+In [Options](https://github.com/AltNext/oss-tools/settings)., turn off the Wikis and Projects features, allow only squash merging, and automatically delete head branches.
+
+In [Manage access](https://github.com/AltNext/oss-tools/settings/access), add our developers team as maintainers.
+
+In [Security & analysis](https://github.com/AltNext/oss-tools/settings/security_analysis), enable Dependabot alerts.
+
+In [Branches](https://github.com/AltNext/oss-tools/settings/branches), add branch protection for the `main` branch:
+* Require pull request reviews before merging
+    * Dismiss stale pull request approvals when new commits are pushed
+* Require status checks to pass before merging
+    * Require branches to be up to date before merging
+    * Add any status checks you want to make required
+* Require conversation resolution before merging
+* Require linear history
+* Include administrators
+
+## NPM
 
 ### We use [`npm`](https://www.npmjs.com) to host our OSS libraries.
 

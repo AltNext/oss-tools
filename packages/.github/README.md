@@ -17,9 +17,16 @@ or files that should not be manually changed.
 Generic JavaScript testing workflow.
 Modify [`jobs.test.strategy.matrix.node-version`](https://github.com/altnext/oss-tools/blob/main/packages/.github/workflows/test.yml#L15) to test against different NodeJS versions.
 
+You can also remove steps that are not relevant to your project,
+like `Type`, `Lint` or the `Coverage` steps.
+
 Add the test run and coverage statuses to your protected branch's required status checks.
 
-See this repository's [`jest`](https://github.com/altnext/oss-tools/blob/main/packages/jest) directory for instructions on how to add [`jest`](https://github.com/facebook/jest) to your project to test it.
+See this repository's [`jest`](https://github.com/altnext/oss-tools/blob/main/packages/jest) directory for instructions on how to add [`jest`](https://github.com/facebook/jest) to your project to run tests.
+
+See this repository's [`lint`](https://github.com/altnext/oss-tools/blob/main/packages/lint) directory for instructions on how to add [`eslint`](https://github.com/eslint/eslint) to your project to lint your files.
+
+See this repository's [`typescript`](https://github.com/altnext/oss-tools/blob/main/packages/typescript) directory for instructions on how to add [`typescript`](https://github.com/microsoft/TypeScript) to your project to add type safety.
 
 ## [`codeql-analysis.yml`](https://github.com/altnext/oss-tools/blob/main/packages/.github/workflows/codeql-analysis.yml)
 Generic CodeQL analysis workflow.
@@ -29,6 +36,7 @@ Add the analysis statuses to your protected branch's required status checks.
 
 ## [`release.yml`](https://github.com/altnext/oss-tools/blob/main/packages/.github/workflows/release.yml)
 Generic JavaScript publishing workflow.
+Add an NPM_TOKEN secret to your repository to allow publishing to [`npm`](https://npmjs.com).
 
 See this repository's [`.changeset`](https://github.com/altnext/oss-tools/blob/main/packages/.changeset) directory for instructions on how to add [`changesets`](https://github.com/atlassian/changesets) to your repository.
 
