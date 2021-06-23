@@ -36,6 +36,7 @@ Add the analysis statuses to your protected branch's required status checks.
 
 ## [`release.yml`](https://github.com/altnext/oss-tools/blob/main/packages/.github/workflows/release.yml)
 Generic JavaScript publishing workflow.
+Add an NPM_TOKEN secret to your repository to allow publishing to [`npm`](https://npmjs.com).
 
 See this repository's [`.changeset`](https://github.com/altnext/oss-tools/blob/main/packages/.changeset) directory for instructions on how to add [`changesets`](https://github.com/atlassian/changesets) to your repository.
 
