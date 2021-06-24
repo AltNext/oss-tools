@@ -9,7 +9,8 @@ We maintain an open source `eslint` config, published at [`eslint-config-altnext
 Add `eslint-config-altnext` to your project `package.json`'s `devDependencies`,
 and add a `lint` script that runs `eslint --ext .ts,.tsx . --cache` (for example, for a project containing [React](https://github.com/facebook/react)).
 
-If you want to run `lint-staged`, add the following field to your root `package.json`:
+If you want to run `lint-staged`,
+add `lint-staged` to your root `package.json`'s `devDependencies` and add the following field:
 ```
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
